@@ -2,7 +2,7 @@
 
 A beautiful, feature-rich desktop notes and task management application built with Electron, React, and Tailwind CSS.
 
-![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+![Version](https://img.shields.io/badge/version-1.3.0-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
 ## Features
@@ -21,6 +21,11 @@ A beautiful, feature-rich desktop notes and task management application built wi
 
 ## Screenshots
 
+<img width="1690" height="921" alt="image" src="https://github.com/user-attachments/assets/7e722a0e-d443-4561-8f35-54c031a982bb" />
+
+<img width="1652" height="918" alt="image" src="https://github.com/user-attachments/assets/51a699b3-64b8-410e-837c-3c0bbe58cfe7" />
+
+<img width="1683" height="892" alt="image" src="https://github.com/user-attachments/assets/0bec8ae1-e2f1-47ac-9c29-230865492820" />
 
 
 
@@ -322,7 +327,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 For issues, questions, or suggestions:
 - Open an issue on GitHub
-- Email: your.email@example.com
+- Email: cartertierney0@gmail.com
 
 ## Future Roadmap 
 
