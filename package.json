@@ -1,0 +1,95 @@
+{
+  "name": "carters-personal-notes",
+  "version": "1.0.0",
+  "description": "An in depth designed desktop notes and task management application for personal daily use",
+  "author": "Carter",
+  "license": "MIT",
+  "main": "public/electron.js",
+  "homepage": "./",
+  "scripts": {
+    "start": "concurrently \"set BROWSER=none && react-scripts start\" \"wait-on http://localhost:3000 && electron .\"",
+    "react-start": "set BROWSER=none && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "electron-dev": "electron .",
+    "electron-pack": "electron-builder",
+    "electron-pack:win": "electron-builder --win",
+    "electron-pack:mac": "electron-builder --mac",
+    "electron-pack:linux": "electron-builder --linux",
+    "electron-pack:all": "electron-builder -mwl",
+    "dist": "npm run build && npm run electron-pack"
+  },
+  "dependencies": {
+    "date-fns": "^2.30.0",
+    "electron-is-dev": "^2.0.0",
+    "lucide-react": "^0.263.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-markdown": "^9.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "concurrently": "^8.2.0",
+    "electron": "^38.2.0",
+    "electron-builder": "^24.6.4",
+    "postcss": "^8.5.6",
+    "react-scripts": "^5.0.1",
+    "tailwindcss": "^3.4.18",
+    "wait-on": "^7.0.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "build": {
+    "appId": "com.carter.personalnotes",
+    "productName": "Carter's Personal Notes",
+    "files": [
+      "build/**/*",
+      "node_modules/**/*",
+      "public/electron.js",
+      "package.json"
+    ],
+    "directories": {
+      "buildResources": "assets",
+      "output": "dist"
+    },
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ],
+      "icon": "assets/icon.ico"
+    },
+    "mac": {
+      "target": [
+        "dmg",
+        "zip"
+      ],
+      "icon": "assets/icon.icns",
+      "category": "public.app-category.productivity"
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "icon": "assets/icon.png",
+      "category": "Office"
+    }
+  }
+}
